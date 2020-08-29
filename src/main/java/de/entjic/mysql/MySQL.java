@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MySQL {
-    private static MySQL instance = new MySQL();
+    private static final MySQL instance = new MySQL();
 
     public static MySQL getInstance() {
         return instance;

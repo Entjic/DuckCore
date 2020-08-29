@@ -1,0 +1,7 @@
+name: DuckCore
+main: de.entjic.DuckCore
+version: 1.0
+description: Core API for creating Bukkit Minecraft simpler
+author: Entjic
+api-version: 1.16.2
+prefix: -- DuckDev --

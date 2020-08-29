@@ -29,7 +29,7 @@ public class File{
         try {
             config.save(file);
         } catch (IOException e) {
-            throw new RuntimeException("Cant save the config file: " + file.getAbsolutePath(), e);
+            throw new RuntimeException("Cant save the file: " + file.getAbsolutePath(), e);
         }
     }
 
