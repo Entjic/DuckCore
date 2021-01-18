@@ -31,7 +31,7 @@
     <scm>
         <connection>scm:git:git://github.com/Entjic/DuckCore.git</connection>
         <developerConnection>scm:git:ssh://github.com:Entjic/DuckCore.git</developerConnection>
-        <url>https://github.com/Entjic/DuckCore</url>
+        <url>https://github.com/Entjic/DuckCore/tree/master</url>
     </scm>
 
 
@@ -63,11 +63,6 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
-
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
     </distributionManagement>
 
     <build>
@@ -120,7 +115,7 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
         </plugins>
