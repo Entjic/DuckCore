@@ -7,7 +7,7 @@
     <groupId>io.github.entjic</groupId>
     <artifactId>DuckCore</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}&lt;</name>
     <description>Just another Spigot Library</description>
     <url>https://github.com/Entjic/DuckCore</url>
