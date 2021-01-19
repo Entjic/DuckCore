@@ -11,11 +11,10 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public class SimpleInventory extends InventoryHandler implements InventoryHolder {
-
     private final Inventory inventory;
 
     public SimpleInventory(int inventorySize) {
@@ -42,7 +41,6 @@ public class SimpleInventory extends InventoryHandler implements InventoryHolder
         }
     }
 
-
     public void setItem(int slot, ItemStack itemStack, Consumer<InventoryClickEvent> handler) {
         inventory.setItem(slot, itemStack);
 
@@ -67,14 +65,13 @@ public class SimpleInventory extends InventoryHandler implements InventoryHolder
         setItems(slotFrom, slotTo, itemStack, null);
     }
 
-
     @NotNull
     @Override
     public Inventory getInventory() {
         return inventory;
     }
 
-    public void open(Player player) {
+    public void openInventory(Player player) {
         player.openInventory(inventory);
     }
 
