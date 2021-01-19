@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MySQL {
+
     private static final MySQL instance = new MySQL();
 
     public static MySQL getInstance() {
@@ -27,7 +28,9 @@ public class MySQL {
         if (! isConnected()) {
             try {
                 readLoginData();
-                connection = DriverManager.getConnection("jdbc:mysql://" + this.host + ":" + this.port + "/" + this.database + "?autoReconnect=true", this.username, this.password);
+                connection = DriverManager.getConnection(
+                        "jdbc:mysql://" + this.host + ":" + this.port + "/" + this.database
+                                + "?autoReconnect=true", this.username, this.password);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
