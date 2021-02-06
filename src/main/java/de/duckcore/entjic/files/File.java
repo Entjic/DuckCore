@@ -1,4 +1,4 @@
-package de.entjic.files;
+package de.duckcore.entjic.files;
 
 import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class File{
 
-    private java.io.File file;
+    private final java.io.File file;
     private FileConfiguration config;
 
     public File(java.io.File file, FileConfiguration config){
@@ -25,6 +25,13 @@ public class File{
         save();
     }
 
+    private void setDefault(String path, Object def){
+        if(config.get(path) == null){
+            config.set(path, def);
+            save();
+        }
+    }
+
     public void save() {
         try {
             config.save(file);
@@ -38,6 +45,7 @@ public class File{
     }
 
     public String getString(String path, String def){
+        setDefault(path, def);
         return config.getString(path,def);
     }
 
@@ -46,7 +54,17 @@ public class File{
     }
 
     public Integer getInt(String path, int def){
+        setDefault(path, def);
         return config.getInt(path, def);
+    }
+
+    public Boolean getBoolean(String path){
+        return config.getBoolean(path);
+    }
+
+    public Boolean getBoolean(String path, boolean def){
+        setDefault(path, def);
+        return config.getBoolean(path, def);
     }
 
     public void load() {

@@ -1,4 +1,4 @@
-package de.entjic.builder.inventory.handler;
+package de.duckcore.entjic.builder.inventory.handler;
 
 import org.bukkit.event.inventory.InventoryOpenEvent;
 

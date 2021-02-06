@@ -1,6 +1,6 @@
-package de.entjic.files;
+package de.duckcore.entjic.files;
 
-import de.entjic.DuckCore;
+import de.duckcore.entjic.DuckCore;
 import java.util.HashMap;
 
 public class FileContainer {

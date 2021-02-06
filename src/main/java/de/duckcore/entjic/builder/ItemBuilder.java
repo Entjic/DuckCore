@@ -1,4 +1,4 @@
-package de.entjic.builder;
+package de.duckcore.entjic.builder;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

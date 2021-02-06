@@ -1,7 +1,7 @@
-package de.entjic.mysql;
+package de.duckcore.entjic.mysql;
 
-import de.entjic.files.File;
-import de.entjic.files.FileContainer;
+import de.duckcore.entjic.files.File;
+import de.duckcore.entjic.files.FileContainer;
 
 import java.sql.*;
 import java.util.ArrayList;

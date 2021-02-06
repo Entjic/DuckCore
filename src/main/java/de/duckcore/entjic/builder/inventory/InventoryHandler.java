@@ -1,8 +1,8 @@
-package de.entjic.builder.inventory;
+package de.duckcore.entjic.builder.inventory;
 
-import de.entjic.builder.inventory.handler.InventoryClickHandler;
-import de.entjic.builder.inventory.handler.InventoryCloseHandler;
-import de.entjic.builder.inventory.handler.InventoryOpenHandler;
+import de.duckcore.entjic.builder.inventory.handler.InventoryClickHandler;
+import de.duckcore.entjic.builder.inventory.handler.InventoryCloseHandler;
+import de.duckcore.entjic.builder.inventory.handler.InventoryOpenHandler;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;

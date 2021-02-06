@@ -1,4 +1,4 @@
-package de.entjic.builder.inventory;
+package de.duckcore.entjic.builder.inventory;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

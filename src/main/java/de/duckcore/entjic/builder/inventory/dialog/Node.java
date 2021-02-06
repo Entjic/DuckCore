@@ -1,4 +1,4 @@
-package de.entjic.builder.inventory.dialog;
+package de.duckcore.entjic.builder.inventory.dialog;
 
 import java.util.ArrayList;
 import java.util.List;

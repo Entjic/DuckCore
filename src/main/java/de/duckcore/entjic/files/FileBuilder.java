@@ -1,4 +1,4 @@
-package de.entjic.files;
+package de.duckcore.entjic.files;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class FileBuilder {
     this.config = config;
   }
 
-  public static de.entjic.files.File create(Plugin plugin, String configName) {
+  public static de.duckcore.entjic.files.File create(Plugin plugin, String configName) {
     if (!plugin.getDataFolder().exists()) {
       plugin.getDataFolder().mkdir();
     }
@@ -28,7 +28,7 @@ public class FileBuilder {
         e.printStackTrace();
       }
     }
-    return new de.entjic.files.File(configFile, YamlConfiguration.loadConfiguration(configFile));
+    return new de.duckcore.entjic.files.File(configFile, YamlConfiguration.loadConfiguration(configFile));
   }
 
 }
